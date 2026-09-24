@@ -113,7 +113,7 @@ h3{font-size:1.55rem;margin:14px 0 2px}
 .red-room-overlay h2{font-size:4rem;margin:0;color:var(--mist);font-style:italic;animation:glitchIn .8s ease .3s forwards;opacity:0}
 .red-room-overlay::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 1px,transparent 1px,transparent 8px);z-index:1}
 .owl-spot{position:relative;overflow:hidden}
-.owl-icon{position:absolute;bottom:10px;right:10px;font-size:1.3rem;opacity:.5;filter:drop-shadow(0 2px 4px rgba(0,0,0,.7));transition:opacity .25s ease,transform .25s ease;pointer-events:none}
+.owl-icon{position:absolute;bottom:10px;right:10px;font-size:1.3rem;opacity:0;transform:scale(.85);filter:drop-shadow(0 2px 4px rgba(0,0,0,.7));transition:opacity .25s ease,transform .25s ease;pointer-events:none}
 .owl-spot:hover .owl-icon{opacity:.95;transform:scale(1.15)}
 .owl-hint{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;background:linear-gradient(0deg,rgba(3,15,13,.9) 20%,transparent);color:var(--mist);font:italic .95rem var(--serif);text-align:right;opacity:0;transform:translateY(8px);transition:opacity .3s ease,transform .3s ease;pointer-events:none}
 .owl-spot:hover .owl-hint{opacity:1;transform:translateY(0)}
