@@ -9,8 +9,9 @@ img{display:block;width:100%;object-fit:cover}
 strong{color:var(--mist);font-weight:700}
 
 /* header + nav + dropdown */
-.site-header{height:80px;padding:0 max(4vw,32px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;background:linear-gradient(180deg,rgba(3,15,13,.82) 0%,rgba(3,15,13,.5) 100%);position:sticky;top:0;z-index:15;transition:background .25s ease,border-color .25s ease}
+.site-header{height:80px;padding:0 max(4vw,32px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;background:transparent;position:sticky;top:0;z-index:15;transition:background .25s ease,border-color .25s ease}
 .site-header.scrolled{background:rgba(4,17,15,.97);border-bottom-color:var(--line)}
+.site-header .brand,.site-header nav>a,.nav-item>a,.nav-toggle,.nav-caret{text-shadow:0 1px 6px rgba(0,0,0,.85)}
 .brand,h1,h2,h3{font-family:var(--serif);font-weight:400}
 .brand{font-size:2rem;letter-spacing:-.04em}
 .site-header nav{display:flex;gap:24px;height:100%;align-items:center}
