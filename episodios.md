@@ -1,0 +1,52 @@
+### Temporada 1 (1990)
+- Episodio 000 (Piloto): *"Pasaje al noroeste"*
+- Episodio 001: *"Pistas sin salida"*
+- Episodio 002: *"Zen, o la habilidad de atrapar a un asesino"*
+- Episodio 003: *"Descansa con dolor"*
+- Episodio 004: *"El hombre de un solo brazo"*
+- Episodio 005: *"Los sueños de Cooper"*
+- Episodio 006: *"Tiempo de realización"*
+- Episodio 007: *"La última noche"*
+
+### Temporada 2 (1990–1991)
+- Episodio 008: *"Que el gigante esté contigo"*
+- Episodio 009: *"Coma"*
+- Episodio 010: *"El hombre detrás del vidrio"*
+- Episodio 011: *"El diario secreto de Laura"*
+- Episodio 012: *"La maldición de la orquídea"*
+- Episodio 013: *"Demasiados dobles"*
+- Episodio 014: *"Almas solitarias"*
+- Episodio 015: *"Drive con un cadáver"*
+- Episodio 016: *"Arbitraje"*
+- Episodio 017: *"Disputa entre hermanos"*
+- Episodio 018: *"Baile de máscaras"*
+- Episodio 019: *"El Cristo Negro"*
+- Episodio 020: *"El ajedrez mortal"*
+- Episodio 021: *"La doble personalidad"*
+- Episodio 022: *"Esclavos y maestros"*
+- Episodio 023: *"La mujer herida"*
+- Episodio 024: *"Las alas del amor"*
+- Episodio 025: *"La relación de los dioses"*
+- Episodio 026: *"El camino a la Logia Blanca"*
+- Episodio 027: *"La reina de Twin Peaks"*
+- Episodio 028: *"Más allá de la vida y de la muerte"*
+
+### Temporada 3: El regreso (2017)
+- Parte 1: *"Mi leño tiene un mensaje para ti"*
+- Parte 2: *"Las estrellas giran y un tiempo se presenta"*
+- Parte 3: *"Llama para pedir ayuda"*
+- Parte 4: *"...trae algunos recuerdos"*
+- Parte 5: *"Expedientes del caso"*
+- Parte 6: *"No te mueras"*
+- Parte 7: *"Hay un cuerpo, sin duda"*
+- Parte 8: *"¿Tienes fuego?"*
+- Parte 9: *"Esta es la silla"*
+- Parte 10: *"Laura es la elegida"*
+- Parte 11: *"Hay fuego a donde vas"*
+- Parte 12: *"Vamos a rockear"*
+- Parte 13: *"¿Qué historia es esa, Charlie?"*
+- Parte 14: *"Somos como el soñador"*
+- Parte 15: *"Hay un poco de miedo en dejar ir"*
+- Parte 16: *"Sin golpear, sin timbre"*
+- Parte 17: *"El pasado dicta el futuro"*
+- Parte 18: *"¿Qué año es este?"*
