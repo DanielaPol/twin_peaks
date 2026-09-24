@@ -81,6 +81,13 @@
     revealTargets.forEach(target => revealObserver.observe(target));
   }
 
+  const header = document.querySelector('.site-header');
+  if (header) {
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 20);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader);
+  }
+
   const totop = document.querySelector('.totop-button');
   if (totop) {
     window.addEventListener('scroll', () => totop.classList.toggle('visible', window.scrollY > 600));
