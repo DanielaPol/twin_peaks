@@ -1,7 +1,8 @@
 :root{--night:#071815;--pine:#103126;--mist:#f1f0e8;--muted:#bdc4b9;--cherry:#761d2d;--amber:#c58b43;--line:rgba(241,240,232,.19);--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--night);color:var(--mist);font:16px/1.6 var(--sans)}
+body{margin:0;background:var(--night);color:var(--mist);font:16px/1.65 var(--sans)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 body.red-room{--night:#160d12;--pine:#31121d;background:#160d12}
 a{color:inherit;text-decoration:none}
 img{display:block;width:100%;object-fit:cover}
@@ -99,6 +100,20 @@ h3{font-size:1.55rem;margin:14px 0 2px}
 .owl-message.visible{transform:translate(-50%,0);opacity:1}
 .totop-button{position:fixed;z-index:12;right:28px;bottom:28px;width:52px;height:52px;border-radius:50%;border:1px solid var(--line);background:var(--pine);color:var(--mist);font-size:1.3rem;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:.3s;box-shadow:0 10px 24px rgba(0,0,0,.4)}
 .totop-button.visible{opacity:1;transform:none;pointer-events:auto}
+
+/* Easter eggs */
+.red-room-overlay{position:fixed;z-index:25;inset:0;background:var(--cherry);display:none;align-items:center;justify-content:center;opacity:0}
+.red-room-overlay.active{display:flex;animation:fadeInRedRoom .6s ease forwards}
+.red-room-overlay-content{position:relative;text-align:center;z-index:2}
+.red-room-overlay h2{font-size:4rem;margin:0;color:var(--mist);font-style:italic;animation:glitchIn .8s ease .3s forwards;opacity:0}
+.red-room-overlay::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 1px,transparent 1px,transparent 8px);z-index:1}
+.hidden-owl{cursor:pointer;transition:filter .25s}
+.hidden-owl:hover{filter:brightness(1.2)}
+.hidden-owl.blink{animation:owlBlink .6s ease}
+@keyframes fadeInRedRoom{from{opacity:0}to{opacity:1}}
+@keyframes glitchIn{0%{opacity:0;transform:translate(-4px,0)}50%{opacity:.8;transform:translate(2px,0)}100%{opacity:1;transform:none}}
+@keyframes owlBlink{0%,100%{opacity:1}50%{opacity:.3}}
+.totop-button.visible{opacity:1;transform:none;pointer-events:auto}
 .totop-button:hover{border-color:var(--amber)}
 
 /* subpages */
@@ -146,15 +161,13 @@ h3{font-size:1.55rem;margin:14px 0 2px}
 .filters{display:flex;gap:10px;margin:-24px 0 37px;flex-wrap:wrap}
 .filter{background:transparent;border:1px solid var(--line);color:var(--mist);padding:8px 14px;cursor:pointer;transition:.2s}
 .filter.active,.filter:hover{background:var(--cherry);border-color:var(--cherry)}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;grid-auto-flow:dense;gap:15px}
-.gallery-item{position:relative;border:0;padding:0;overflow:hidden;background:linear-gradient(100deg,#0d2822 0%,#1a4235 30%,#0d2822 60%);background-size:250% 100%;animation:shimmer 1.6s infinite linear;cursor:pointer}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.gallery-item{position:relative;border:0;padding:0;overflow:hidden;background:linear-gradient(100deg,#0d2822 0%,#1a4235 30%,#0d2822 60%);background-size:250% 100%;animation:shimmer 1.6s infinite linear;cursor:pointer;aspect-ratio:1/1}
 .gallery-item.loaded{animation:none;background:#000}
-.gallery-item img{height:100%;opacity:0;transition:transform .4s,opacity .3s}
+.gallery-item img{width:100%;height:100%;object-fit:cover;opacity:0;transition:transform .4s,opacity .3s;display:block}
 .gallery-item.loaded img{opacity:1}
 .gallery-item:hover img{transform:scale(1.05)}
 .gallery-item.loaded:hover img{opacity:.82}
-.gallery-item.wide{grid-column:span 2}
-.gallery-item.tall{grid-row:span 2}
 .gallery-item.hidden{display:none}
 @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-50% 0}}
 
@@ -195,7 +208,7 @@ input::placeholder,textarea::placeholder{color:rgba(241,240,232,.4)}
   .season>img,.season-one>img{height:280px}
   .season-return{padding:38px 20px;margin:35px -20px 0}
   .production-grid{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}
   .modal{padding:20px}
   .modal-prev,.modal-next{width:42px;height:42px;font-size:1.8rem}
   .modal-prev{left:6px}

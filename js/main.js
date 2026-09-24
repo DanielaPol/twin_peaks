@@ -86,4 +86,22 @@
     window.addEventListener('scroll', () => totop.classList.toggle('visible', window.scrollY > 600));
     totop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
+
+  const redRoomOverlay = document.querySelector('.red-room-overlay');
+  if (redRoomOverlay && !sessionStorage.getItem('redRoomShown')) {
+    setTimeout(() => {
+      redRoomOverlay.classList.add('active');
+      sessionStorage.setItem('redRoomShown', 'true');
+      setTimeout(() => redRoomOverlay.classList.remove('active'), 4500);
+    }, 2500);
+  }
+
+  document.querySelectorAll('.hidden-owl').forEach(owl => {
+    owl.addEventListener('click', () => {
+      owl.classList.add('blink');
+      setTimeout(() => owl.classList.remove('blink'), 600);
+      const msg = document.querySelector('.owl-message');
+      if (msg) { msg.textContent = 'The owls are not what they seem.'; msg.classList.add('visible'); clearTimeout(window.owlTimer2); window.owlTimer2 = setTimeout(() => msg.classList.remove('visible'), 4000); }
+    });
+  });
 })();
