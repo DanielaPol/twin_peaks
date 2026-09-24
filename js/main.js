@@ -103,12 +103,4 @@
     }, 2500);
   }
 
-  document.querySelectorAll('.hidden-owl').forEach(owl => {
-    owl.addEventListener('click', () => {
-      owl.classList.add('blink');
-      setTimeout(() => owl.classList.remove('blink'), 600);
-      const msg = document.querySelector('.owl-message');
-      if (msg) { msg.textContent = 'The owls are not what they seem.'; msg.classList.add('visible'); clearTimeout(window.owlTimer2); window.owlTimer2 = setTimeout(() => msg.classList.remove('visible'), 4000); }
-    });
-  });
 })();
